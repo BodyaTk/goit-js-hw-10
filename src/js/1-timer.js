@@ -70,6 +70,12 @@ startBtn.addEventListener('click', () => {
 
     if (deltaTime <= 0) {
       clearInterval(timerId);
+      updateTimerInterface({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
       input.disabled = false;
       return;
     }
